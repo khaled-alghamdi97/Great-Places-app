@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:GreatPlaces/providers/greate_places.dart';
 import 'package:GreatPlaces/widgets/image_input.dart';
+import 'package:GreatPlaces/widgets/location_input.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -50,7 +51,11 @@ class _AddPlacesPageState extends State<AddPlacesPage> {
                 SizedBox(
                   height: 10,
                 ),
-                ImageInput(_selectImage)
+                ImageInput(_selectImage),
+                SizedBox(
+                  height: 10,
+                ),
+                LocationInput()
               ],
             )),
             RaisedButton(

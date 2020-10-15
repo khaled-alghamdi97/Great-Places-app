@@ -10,6 +10,10 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>added location plugin</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>added location plugin</string>
 	<key>CFBundleName</key>
 	<string>GreatPlaces</string>
 	<key>CFBundlePackageType</key>

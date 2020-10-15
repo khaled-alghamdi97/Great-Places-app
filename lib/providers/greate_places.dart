@@ -11,7 +11,7 @@ class GreatPlaces with ChangeNotifier {
     return [..._items];
   }
 
-  void addPlace(String title, File pickedFile) {
+  Future<void> addPlace(String title, File pickedFile) async {
     final newPlace = Place(
         id: DateTime.now().toString(),
         name: title,
@@ -20,10 +20,27 @@ class GreatPlaces with ChangeNotifier {
 
     _items.add(newPlace);
     notifyListeners();
-    DBHelper.insert("places", {
-      "id": newPlace.id,
-      "title": newPlace.name,
-      "image": newPlace.image.path
-    });
+    try {
+      await DBHelper.insert("user_place", {
+        "id": newPlace.id,
+        "title": newPlace.name,
+        "image": newPlace.image.path
+      });
+    } catch (error) {
+      print(error);
+    }
+  }
+
+  Future<void> getPlaces() async {
+    final placesData = await DBHelper.getData("user_place");
+
+    _items = placesData
+        .map((e) => Place(
+            id: e['id'],
+            name: e['title'],
+            location: null,
+            image: File(e['image'])))
+        .toList();
+    notifyListeners();
   }
 }
