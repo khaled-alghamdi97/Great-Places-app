@@ -10,6 +10,7 @@ MERGED from [:image_picker] D:\GitHub\Great-Places-app\build\image_picker\interm
 MERGED from [:flutter_plugin_android_lifecycle] D:\GitHub\Great-Places-app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:sqflite] D:\GitHub\Great-Places-app\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] D:\GitHub\Great-Places-app\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:location_web] D:\GitHub\Great-Places-app\build\location_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\ksa_9\.gradle\caches\transforms-2\files-2.1\0c9f2a2eff43fea3ef389931e46ed963\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\ksa_9\.gradle\caches\transforms-2\files-2.1\eb61da41336ab7f45d1795e5a1ddaa65\jetified-play-services-base-16.0.1\AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\ksa_9\.gradle\caches\transforms-2\files-2.1\5c697fec7e55e9bb60005789c206ab6c\play-services-places-placereport-16.0.0\AndroidManifest.xml:17:1-24:12
@@ -142,6 +143,8 @@ MERGED from [:sqflite] D:\GitHub\Great-Places-app\build\sqflite\intermediates\li
 MERGED from [:sqflite] D:\GitHub\Great-Places-app\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] D:\GitHub\Great-Places-app\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] D:\GitHub\Great-Places-app\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:location_web] D:\GitHub\Great-Places-app\build\location_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:location_web] D:\GitHub\Great-Places-app\build\location_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\ksa_9\.gradle\caches\transforms-2\files-2.1\0c9f2a2eff43fea3ef389931e46ed963\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\ksa_9\.gradle\caches\transforms-2\files-2.1\0c9f2a2eff43fea3ef389931e46ed963\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\ksa_9\.gradle\caches\transforms-2\files-2.1\eb61da41336ab7f45d1795e5a1ddaa65\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
