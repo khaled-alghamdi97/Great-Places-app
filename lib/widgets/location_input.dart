@@ -34,7 +34,10 @@ class _LocationInputState extends State<LocationInput> {
               ? Center(
                   child: Text("no location has been selected yet"),
                 )
-              : Image.network(_locationImagePreview),
+              : Image.network(
+                  _locationImagePreview,
+                  fit: BoxFit.cover,
+                ),
         ),
         SizedBox(
           height: 10,
