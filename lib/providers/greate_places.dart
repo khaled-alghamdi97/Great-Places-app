@@ -11,11 +11,12 @@ class GreatPlaces with ChangeNotifier {
     return [..._items];
   }
 
-  Future<void> addPlace(String title, File pickedFile) async {
+  Future<void> addPlace(
+      String title, File pickedFile, PlaceLocation pickedLocation) async {
     final newPlace = Place(
         id: DateTime.now().toString(),
         name: title,
-        location: null,
+        location: pickedLocation,
         image: pickedFile);
 
     _items.add(newPlace);
@@ -24,7 +25,10 @@ class GreatPlaces with ChangeNotifier {
       await DBHelper.insert("user_place", {
         "id": newPlace.id,
         "title": newPlace.name,
-        "image": newPlace.image.path
+        "image": newPlace.image.path,
+        "loc_lat": newPlace.location.lat,
+        "loc_lng": newPlace.location.lon,
+        "address": newPlace.location.address
       });
     } catch (error) {
       print(error);
@@ -38,7 +42,8 @@ class GreatPlaces with ChangeNotifier {
         .map((e) => Place(
             id: e['id'],
             name: e['title'],
-            location: null,
+            location: PlaceLocation(
+                lat: e['loc_lat'], lon: e['loc_lon'], address: e["address"]),
             image: File(e['image'])))
         .toList();
     notifyListeners();

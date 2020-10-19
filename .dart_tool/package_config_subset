@@ -42,6 +42,14 @@ flutter_plugin_android_lifecycle
 2.1
 file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/
 file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/lib/
+google_maps_flutter
+2.1
+file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter-1.0.3/
+file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter-1.0.3/lib/
+google_maps_flutter_platform_interface
+2.3
+file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter_platform_interface-1.0.4/
+file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter_platform_interface-1.0.4/lib/
 http
 2.4
 file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/http-0.12.2/
@@ -154,6 +162,10 @@ stream_channel
 2.10
 file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/stream_channel-2.1.0-nullsafety.1/
 file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/stream_channel-2.1.0-nullsafety.1/lib/
+stream_transform
+2.6
+file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/stream_transform-1.2.0/
+file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/stream_transform-1.2.0/lib/
 string_scanner
 2.10
 file:///C:/Users/ksa_9/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/string_scanner-1.1.0-nullsafety.1/

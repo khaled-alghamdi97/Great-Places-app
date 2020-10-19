@@ -22,28 +22,29 @@ class PlacesList extends StatelessWidget {
         ),
         body: FutureBuilder(
           future: Provider.of<GreatPlaces>(context, listen: false).getPlaces(),
-          builder: (context, snapshot) =>
-              snapshot.connectionState == ConnectionState.waiting
-                  ? Center(
-                      child: CircularProgressIndicator(),
-                    )
-                  : Consumer<GreatPlaces>(
-                      child: Center(
-                        child: Text("there is no place taken yet"),
-                      ),
-                      builder: (ctx, value, ch) => value.place.length <= 0
-                          ? ch
-                          : ListView.builder(
-                              itemCount: value.place.length,
-                              itemBuilder: (context, index) => ListTile(
-                                leading: CircleAvatar(
-                                  backgroundImage:
-                                      FileImage(value.place[index].image),
-                                ),
-                                title: Text(value.place[index].name),
-                              ),
+          builder: (context, snapshot) => snapshot.connectionState ==
+                  ConnectionState.waiting
+              ? Center(
+                  child: CircularProgressIndicator(),
+                )
+              : Consumer<GreatPlaces>(
+                  child: Center(
+                    child: Text("there is no place taken yet"),
+                  ),
+                  builder: (ctx, value, ch) => value.place.length <= 0
+                      ? ch
+                      : ListView.builder(
+                          itemCount: value.place.length,
+                          itemBuilder: (context, index) => ListTile(
+                            leading: CircleAvatar(
+                              backgroundImage:
+                                  FileImage(value.place[index].image),
                             ),
-                    ),
+                            title: Text(value.place[index].name),
+                            subtitle: Text(value.place[index].location.address),
+                          ),
+                        ),
+                ),
         ));
   }
 }

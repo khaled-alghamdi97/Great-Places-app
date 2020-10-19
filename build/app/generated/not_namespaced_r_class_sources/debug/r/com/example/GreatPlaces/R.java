@@ -15,6 +15,11 @@ public final class R {
      */
     public static final int alpha=0x7f010000;
     /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int ambientEnabled=0x7f010001;
+    /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -30,12 +35,40 @@ public final class R {
      * <tr><td>wide</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int buttonSize=0x7f010001;
+    public static final int buttonSize=0x7f010002;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraBearing=0x7f010003;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraMaxZoomPreference=0x7f010004;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraMinZoomPreference=0x7f010005;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTargetLat=0x7f010006;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTargetLng=0x7f010007;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTilt=0x7f010008;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraZoom=0x7f010009;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int circleCrop=0x7f010002;
+    public static final int circleCrop=0x7f01000a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -52,14 +85,7 @@ public final class R {
      * <tr><td>light</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int colorScheme=0x7f010003;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int coordinatorLayoutStyle=0x7f010004;
+    public static final int colorScheme=0x7f01000b;
     /**
      * The reference to the font file to be used. This should be a file in the res/font folder
      * and should therefore have an R reference value. E.g. @font/myfont
@@ -68,13 +94,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int font=0x7f010005;
+    public static final int font=0x7f01000c;
     /**
      * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderAuthority=0x7f010006;
+    public static final int fontProviderAuthority=0x7f01000d;
     /**
      * The sets of hashes for the certificates the provider should be signed with. This is
      * used to verify the identity of the provider, and is only required if the provider is not
@@ -86,7 +112,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fontProviderCerts=0x7f010007;
+    public static final int fontProviderCerts=0x7f01000e;
     /**
      * The strategy to be used when fetching font data from a font provider in XML layouts.
      * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
@@ -113,7 +139,7 @@ public final class R {
      * default typeface will be used instead.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchStrategy=0x7f010008;
+    public static final int fontProviderFetchStrategy=0x7f01000f;
     /**
      * The length of the timeout during fetching.
      * <p>May be an integer value, such as "<code>100</code>".
@@ -127,21 +153,21 @@ public final class R {
      * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchTimeout=0x7f010009;
+    public static final int fontProviderFetchTimeout=0x7f010010;
     /**
      * The package for the Font Provider to be used for the request. This is used to verify
      * the identity of the provider.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderPackage=0x7f01000a;
+    public static final int fontProviderPackage=0x7f010011;
     /**
      * The query to be sent over to the provider. Refer to your font provider's documentation
      * on the format of this string.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderQuery=0x7f01000b;
+    public static final int fontProviderQuery=0x7f010012;
     /**
      * The style of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any style information in the font's header tables. If
@@ -156,7 +182,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontStyle=0x7f01000c;
+    public static final int fontStyle=0x7f010013;
     /**
      * The variation settings to be applied to the font. The string should be in the following
      * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
@@ -165,7 +191,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontVariationSettings=0x7f01000d;
+    public static final int fontVariationSettings=0x7f010014;
     /**
      * The weight of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any weight information in the font's header tables. Must
@@ -174,11 +200,11 @@ public final class R {
      * in the font's header tables will be used.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fontWeight=0x7f01000e;
+    public static final int fontWeight=0x7f010015;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int imageAspectRatio=0x7f01000f;
+    public static final int imageAspectRatio=0x7f010016;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -191,111 +217,43 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int imageAspectRatioAdjust=0x7f010010;
+    public static final int imageAspectRatioAdjust=0x7f010017;
     /**
-     * A reference to an array of integers representing the
-     * locations of horizontal keylines in dp from the starting edge.
-     * Child views can refer to these keylines for alignment using
-     * layout_keyline="index" where index is a 0-based index into
-     * this array.
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int keylines=0x7f010011;
+    public static final int latLngBoundsNorthEastLatitude=0x7f010018;
     /**
-     * The id of an anchor view that this view should position relative to.
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_anchor=0x7f010012;
+    public static final int latLngBoundsNorthEastLongitude=0x7f010019;
     /**
-     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
-     * within its parent's bounds.
-     * <p>Must be one or more (separated by '|') of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
-     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the horizontal gravity: a left gravity will clip the right
-     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
-     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
-     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
-     * </table>
+     * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_anchorGravity=0x7f010013;
+    public static final int latLngBoundsSouthWestLatitude=0x7f01001a;
     /**
-     * The class name of a Behavior class defining special runtime behavior
-     * for this child view.
-     * <p>May be a string value, using '\\;' to escape characters such as
-     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_behavior=0x7f010014;
+    public static final int latLngBoundsSouthWestLongitude=0x7f01001b;
     /**
-     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
-     * <p>Must be one or more (separated by '|') of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
-     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
-     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
-     * </table>
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
      */
-    public static final int layout_dodgeInsetEdges=0x7f010015;
+    public static final int liteMode=0x7f01001c;
     /**
-     * Specifies how this view insets the CoordinatorLayout and make some other views
-     * dodge it.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
+     * <tr><td>hybrid</td><td>4</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>normal</td><td>1</td><td></td></tr>
+     * <tr><td>satellite</td><td>2</td><td></td></tr>
+     * <tr><td>terrain</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int layout_insetEdge=0x7f010016;
-    /**
-     * The index of a keyline this view should position relative to.
-     * android:layout_gravity will affect how the view aligns to the
-     * specified keyline.
-     * <p>May be an integer value, such as "<code>100</code>".
-     */
-    public static final int layout_keyline=0x7f010017;
+    public static final int mapType=0x7f01001d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -304,24 +262,63 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int scopeUris=0x7f010018;
-    /**
-     * Drawable to display behind the status bar when the view is set to draw behind it.
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int statusBarBackground=0x7f010019;
+    public static final int scopeUris=0x7f01001e;
     /**
      * The index of the font in the tcc font file. If the font file referenced is not in the
      * tcc format, this attribute needs not be specified.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int ttcIndex=0x7f01001a;
+    public static final int ttcIndex=0x7f01001f;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiCompass=0x7f010020;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiMapToolbar=0x7f010021;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiRotateGestures=0x7f010022;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiScrollGestures=0x7f010023;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiScrollGesturesDuringRotateOrZoom=0x7f010024;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiTiltGestures=0x7f010025;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiZoomControls=0x7f010026;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiZoomGestures=0x7f010027;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int useViewLifecycle=0x7f010028;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int zOrderOnTop=0x7f010029;
   }
   public static final class color {
     public static final int common_google_signin_btn_text_dark=0x7f020000;
@@ -337,11 +334,8 @@ public final class R {
     public static final int common_google_signin_btn_tint=0x7f02000a;
     public static final int notification_action_color_filter=0x7f02000b;
     public static final int notification_icon_bg_color=0x7f02000c;
-    public static final int notification_material_background_media_default_color=0x7f02000d;
-    public static final int primary_text_default_material_dark=0x7f02000e;
-    public static final int ripple_material_light=0x7f02000f;
-    public static final int secondary_text_default_material_dark=0x7f020010;
-    public static final int secondary_text_default_material_light=0x7f020011;
+    public static final int ripple_material_light=0x7f02000d;
+    public static final int secondary_text_default_material_light=0x7f02000e;
   }
   public static final class dimen {
     public static final int compat_button_inset_horizontal_material=0x7f030000;
@@ -366,10 +360,6 @@ public final class R {
     public static final int notification_subtext_size=0x7f030013;
     public static final int notification_top_pad=0x7f030014;
     public static final int notification_top_pad_large_text=0x7f030015;
-    public static final int subtitle_corner_radius=0x7f030016;
-    public static final int subtitle_outline_width=0x7f030017;
-    public static final int subtitle_shadow_offset=0x7f030018;
-    public static final int subtitle_shadow_radius=0x7f030019;
   }
   public static final class drawable {
     public static final int common_full_open_on_phone=0x7f040000;
@@ -441,92 +431,65 @@ public final class R {
     public static final int accessibility_custom_action_7=0x7f05001e;
     public static final int accessibility_custom_action_8=0x7f05001f;
     public static final int accessibility_custom_action_9=0x7f050020;
-    public static final int action0=0x7f050021;
-    public static final int action_container=0x7f050022;
-    public static final int action_divider=0x7f050023;
-    public static final int action_image=0x7f050024;
-    public static final int action_text=0x7f050025;
-    public static final int actions=0x7f050026;
-    public static final int adjust_height=0x7f050027;
-    public static final int adjust_width=0x7f050028;
-    public static final int all=0x7f050029;
-    public static final int async=0x7f05002a;
-    public static final int auto=0x7f05002b;
-    public static final int blocking=0x7f05002c;
-    public static final int bottom=0x7f05002d;
-    public static final int cancel_action=0x7f05002e;
-    public static final int center=0x7f05002f;
-    public static final int center_horizontal=0x7f050030;
-    public static final int center_vertical=0x7f050031;
-    public static final int chronometer=0x7f050032;
-    public static final int clip_horizontal=0x7f050033;
-    public static final int clip_vertical=0x7f050034;
-    public static final int dark=0x7f050035;
-    public static final int dialog_button=0x7f050036;
-    public static final int end=0x7f050037;
-    public static final int end_padder=0x7f050038;
-    public static final int fill=0x7f050039;
-    public static final int fill_horizontal=0x7f05003a;
-    public static final int fill_vertical=0x7f05003b;
-    public static final int forever=0x7f05003c;
-    public static final int icon=0x7f05003d;
-    public static final int icon_group=0x7f05003e;
-    public static final int icon_only=0x7f05003f;
-    public static final int info=0x7f050040;
-    public static final int italic=0x7f050041;
-    public static final int left=0x7f050042;
-    public static final int light=0x7f050043;
-    public static final int line1=0x7f050044;
-    public static final int line3=0x7f050045;
-    public static final int media_actions=0x7f050046;
-    public static final int none=0x7f050047;
-    public static final int normal=0x7f050048;
-    public static final int notification_background=0x7f050049;
-    public static final int notification_main_column=0x7f05004a;
-    public static final int notification_main_column_container=0x7f05004b;
-    public static final int right=0x7f05004c;
-    public static final int right_icon=0x7f05004d;
-    public static final int right_side=0x7f05004e;
-    public static final int standard=0x7f05004f;
-    public static final int start=0x7f050050;
-    public static final int status_bar_latest_event_content=0x7f050051;
-    public static final int tag_accessibility_actions=0x7f050052;
-    public static final int tag_accessibility_clickable_spans=0x7f050053;
-    public static final int tag_accessibility_heading=0x7f050054;
-    public static final int tag_accessibility_pane_title=0x7f050055;
-    public static final int tag_screen_reader_focusable=0x7f050056;
-    public static final int tag_transition_group=0x7f050057;
-    public static final int tag_unhandled_key_event_manager=0x7f050058;
-    public static final int tag_unhandled_key_listeners=0x7f050059;
-    public static final int text=0x7f05005a;
-    public static final int text2=0x7f05005b;
-    public static final int time=0x7f05005c;
-    public static final int title=0x7f05005d;
-    public static final int top=0x7f05005e;
-    public static final int wide=0x7f05005f;
+    public static final int action_container=0x7f050021;
+    public static final int action_divider=0x7f050022;
+    public static final int action_image=0x7f050023;
+    public static final int action_text=0x7f050024;
+    public static final int actions=0x7f050025;
+    public static final int adjust_height=0x7f050026;
+    public static final int adjust_width=0x7f050027;
+    public static final int async=0x7f050028;
+    public static final int auto=0x7f050029;
+    public static final int blocking=0x7f05002a;
+    public static final int chronometer=0x7f05002b;
+    public static final int dark=0x7f05002c;
+    public static final int dialog_button=0x7f05002d;
+    public static final int forever=0x7f05002e;
+    public static final int hybrid=0x7f05002f;
+    public static final int icon=0x7f050030;
+    public static final int icon_group=0x7f050031;
+    public static final int icon_only=0x7f050032;
+    public static final int info=0x7f050033;
+    public static final int italic=0x7f050034;
+    public static final int light=0x7f050035;
+    public static final int line1=0x7f050036;
+    public static final int line3=0x7f050037;
+    public static final int none=0x7f050038;
+    public static final int normal=0x7f050039;
+    public static final int notification_background=0x7f05003a;
+    public static final int notification_main_column=0x7f05003b;
+    public static final int notification_main_column_container=0x7f05003c;
+    public static final int right_icon=0x7f05003d;
+    public static final int right_side=0x7f05003e;
+    public static final int satellite=0x7f05003f;
+    public static final int standard=0x7f050040;
+    public static final int tag_accessibility_actions=0x7f050041;
+    public static final int tag_accessibility_clickable_spans=0x7f050042;
+    public static final int tag_accessibility_heading=0x7f050043;
+    public static final int tag_accessibility_pane_title=0x7f050044;
+    public static final int tag_screen_reader_focusable=0x7f050045;
+    public static final int tag_transition_group=0x7f050046;
+    public static final int tag_unhandled_key_event_manager=0x7f050047;
+    public static final int tag_unhandled_key_listeners=0x7f050048;
+    public static final int terrain=0x7f050049;
+    public static final int text=0x7f05004a;
+    public static final int text2=0x7f05004b;
+    public static final int time=0x7f05004c;
+    public static final int title=0x7f05004d;
+    public static final int wide=0x7f05004e;
   }
   public static final class integer {
-    public static final int cancel_button_image_alpha=0x7f060000;
-    public static final int google_play_services_version=0x7f060001;
-    public static final int status_bar_notification_info_maxnum=0x7f060002;
+    public static final int google_play_services_version=0x7f060000;
+    public static final int status_bar_notification_info_maxnum=0x7f060001;
   }
   public static final class layout {
     public static final int custom_dialog=0x7f070000;
     public static final int notification_action=0x7f070001;
     public static final int notification_action_tombstone=0x7f070002;
-    public static final int notification_media_action=0x7f070003;
-    public static final int notification_media_cancel_action=0x7f070004;
-    public static final int notification_template_big_media=0x7f070005;
-    public static final int notification_template_big_media_custom=0x7f070006;
-    public static final int notification_template_big_media_narrow=0x7f070007;
-    public static final int notification_template_big_media_narrow_custom=0x7f070008;
-    public static final int notification_template_custom_big=0x7f070009;
-    public static final int notification_template_icon_group=0x7f07000a;
-    public static final int notification_template_lines_media=0x7f07000b;
-    public static final int notification_template_media=0x7f07000c;
-    public static final int notification_template_media_custom=0x7f07000d;
-    public static final int notification_template_part_chronometer=0x7f07000e;
-    public static final int notification_template_part_time=0x7f07000f;
+    public static final int notification_template_custom_big=0x7f070003;
+    public static final int notification_template_icon_group=0x7f070004;
+    public static final int notification_template_part_chronometer=0x7f070005;
+    public static final int notification_template_part_time=0x7f070006;
   }
   public static final class mipmap {
     public static final int ic_launcher=0x7f080000;
@@ -557,17 +520,11 @@ public final class R {
     public static final int NormalTheme=0x7f0a0001;
     public static final int TextAppearance_Compat_Notification=0x7f0a0002;
     public static final int TextAppearance_Compat_Notification_Info=0x7f0a0003;
-    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0a0004;
-    public static final int TextAppearance_Compat_Notification_Line2=0x7f0a0005;
-    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0a0006;
-    public static final int TextAppearance_Compat_Notification_Media=0x7f0a0007;
-    public static final int TextAppearance_Compat_Notification_Time=0x7f0a0008;
-    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0a0009;
-    public static final int TextAppearance_Compat_Notification_Title=0x7f0a000a;
-    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0a000b;
-    public static final int Widget_Compat_NotificationActionContainer=0x7f0a000c;
-    public static final int Widget_Compat_NotificationActionText=0x7f0a000d;
-    public static final int Widget_Support_CoordinatorLayout=0x7f0a000e;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0a0004;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0a0005;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0a0006;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0a0007;
+    public static final int Widget_Compat_NotificationActionText=0x7f0a0008;
   }
   public static final class styleable {
     /**
@@ -620,237 +577,6 @@ public final class R {
      */
     public static final int ColorStateListItem_alpha=2;
     /**
-     * Attributes that can be used with a CoordinatorLayout.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.example.GreatPlaces:keylines}</code></td><td>A reference to an array of integers representing the
-     * locations of horizontal keylines in dp from the starting edge.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.example.GreatPlaces:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
-     * </table>
-     * @see #CoordinatorLayout_keylines
-     * @see #CoordinatorLayout_statusBarBackground
-     */
-    public static final int[] CoordinatorLayout={
-      0x7f010011, 0x7f010019
-    };
-    /**
-     * <p>
-     * @attr description
-     * A reference to an array of integers representing the
-     * locations of horizontal keylines in dp from the starting edge.
-     * Child views can refer to these keylines for alignment using
-     * layout_keyline="index" where index is a 0-based index into
-     * this array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name com.example.GreatPlaces:keylines
-     */
-    public static final int CoordinatorLayout_keylines=0;
-    /**
-     * <p>
-     * @attr description
-     * Drawable to display behind the status bar when the view is set to draw behind it.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     *
-     * @attr name com.example.GreatPlaces:statusBarBackground
-     */
-    public static final int CoordinatorLayout_statusBarBackground=1;
-    /**
-     * Attributes that can be used with a CoordinatorLayout_Layout.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.example.GreatPlaces:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.example.GreatPlaces:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
-     * within its parent's bounds.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.example.GreatPlaces:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
-     * for this child view.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.example.GreatPlaces:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.example.GreatPlaces:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
-     * dodge it.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.example.GreatPlaces:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
-     * </table>
-     * @see #CoordinatorLayout_Layout_android_layout_gravity
-     * @see #CoordinatorLayout_Layout_layout_anchor
-     * @see #CoordinatorLayout_Layout_layout_anchorGravity
-     * @see #CoordinatorLayout_Layout_layout_behavior
-     * @see #CoordinatorLayout_Layout_layout_dodgeInsetEdges
-     * @see #CoordinatorLayout_Layout_layout_insetEdge
-     * @see #CoordinatorLayout_Layout_layout_keyline
-     */
-    public static final int[] CoordinatorLayout_Layout={
-      0x010100b3, 0x7f010012, 0x7f010013, 0x7f010014, 
-      0x7f010015, 0x7f010016, 0x7f010017
-    };
-    /**
-     * <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
-     *
-     * <p>Must be one or more (separated by '|') of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center</td><td>11</td><td></td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>fill</td><td>77</td><td></td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
-     * </table>
-     *
-     * @attr name android:layout_gravity
-     */
-    public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
-    /**
-     * <p>
-     * @attr description
-     * The id of an anchor view that this view should position relative to.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name com.example.GreatPlaces:layout_anchor
-     */
-    public static final int CoordinatorLayout_Layout_layout_anchor=1;
-    /**
-     * <p>
-     * @attr description
-     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
-     * within its parent's bounds.
-     *
-     * <p>Must be one or more (separated by '|') of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
-     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the horizontal gravity: a left gravity will clip the right
-     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
-     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
-     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
-     * </table>
-     *
-     * @attr name com.example.GreatPlaces:layout_anchorGravity
-     */
-    public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
-    /**
-     * <p>
-     * @attr description
-     * The class name of a Behavior class defining special runtime behavior
-     * for this child view.
-     *
-     * <p>May be a string value, using '\\;' to escape characters such as
-     * '\\n' or '\\uxxxx' for a unicode character;
-     *
-     * @attr name com.example.GreatPlaces:layout_behavior
-     */
-    public static final int CoordinatorLayout_Layout_layout_behavior=3;
-    /**
-     * <p>
-     * @attr description
-     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
-     *
-     * <p>Must be one or more (separated by '|') of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
-     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
-     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
-     * </table>
-     *
-     * @attr name com.example.GreatPlaces:layout_dodgeInsetEdges
-     */
-    public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
-    /**
-     * <p>
-     * @attr description
-     * Specifies how this view insets the CoordinatorLayout and make some other views
-     * dodge it.
-     *
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
-     * </table>
-     *
-     * @attr name com.example.GreatPlaces:layout_insetEdge
-     */
-    public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
-    /**
-     * <p>
-     * @attr description
-     * The index of a keyline this view should position relative to.
-     * android:layout_gravity will affect how the view aligns to the
-     * specified keyline.
-     *
-     * <p>May be an integer value, such as "<code>100</code>".
-     *
-     * @attr name com.example.GreatPlaces:layout_keyline
-     */
-    public static final int CoordinatorLayout_Layout_layout_keyline=6;
-    /**
      * Attributes that can be used with a FontFamily.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -872,8 +598,8 @@ public final class R {
      * @see #FontFamily_fontProviderQuery
      */
     public static final int[] FontFamily={
-      0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 
-      0x7f01000a, 0x7f01000b
+      0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 
+      0x7f010011, 0x7f010012
     };
     /**
      * <p>
@@ -1009,8 +735,8 @@ public final class R {
      */
     public static final int[] FontFamilyFont={
       0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 
-      0x01010570, 0x7f010005, 0x7f01000c, 0x7f01000d, 
-      0x7f01000e, 0x7f01001a
+      0x01010570, 0x7f01000c, 0x7f010013, 0x7f010014, 
+      0x7f010015, 0x7f01001f
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -1402,7 +1128,7 @@ public final class R {
      * @see #LoadingImageView_imageAspectRatioAdjust
      */
     public static final int[] LoadingImageView={
-      0x7f010002, 0x7f01000f, 0x7f010010
+      0x7f01000a, 0x7f010016, 0x7f010017
     };
     /**
      * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#circleCrop}
@@ -1442,6 +1168,310 @@ public final class R {
      */
     public static final int LoadingImageView_imageAspectRatioAdjust=2;
     /**
+     * Attributes that can be used with a MapAttrs.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #MapAttrs_ambientEnabled com.example.GreatPlaces:ambientEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraBearing com.example.GreatPlaces:cameraBearing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraMaxZoomPreference com.example.GreatPlaces:cameraMaxZoomPreference}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraMinZoomPreference com.example.GreatPlaces:cameraMinZoomPreference}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTargetLat com.example.GreatPlaces:cameraTargetLat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTargetLng com.example.GreatPlaces:cameraTargetLng}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTilt com.example.GreatPlaces:cameraTilt}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraZoom com.example.GreatPlaces:cameraZoom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLatitude com.example.GreatPlaces:latLngBoundsNorthEastLatitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLongitude com.example.GreatPlaces:latLngBoundsNorthEastLongitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLatitude com.example.GreatPlaces:latLngBoundsSouthWestLatitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLongitude com.example.GreatPlaces:latLngBoundsSouthWestLongitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_liteMode com.example.GreatPlaces:liteMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_mapType com.example.GreatPlaces:mapType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiCompass com.example.GreatPlaces:uiCompass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiMapToolbar com.example.GreatPlaces:uiMapToolbar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiRotateGestures com.example.GreatPlaces:uiRotateGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiScrollGestures com.example.GreatPlaces:uiScrollGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiScrollGesturesDuringRotateOrZoom com.example.GreatPlaces:uiScrollGesturesDuringRotateOrZoom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiTiltGestures com.example.GreatPlaces:uiTiltGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiZoomControls com.example.GreatPlaces:uiZoomControls}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiZoomGestures com.example.GreatPlaces:uiZoomGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_useViewLifecycle com.example.GreatPlaces:useViewLifecycle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_zOrderOnTop com.example.GreatPlaces:zOrderOnTop}</code></td><td></td></tr>
+     * </table>
+     * @see #MapAttrs_ambientEnabled
+     * @see #MapAttrs_cameraBearing
+     * @see #MapAttrs_cameraMaxZoomPreference
+     * @see #MapAttrs_cameraMinZoomPreference
+     * @see #MapAttrs_cameraTargetLat
+     * @see #MapAttrs_cameraTargetLng
+     * @see #MapAttrs_cameraTilt
+     * @see #MapAttrs_cameraZoom
+     * @see #MapAttrs_latLngBoundsNorthEastLatitude
+     * @see #MapAttrs_latLngBoundsNorthEastLongitude
+     * @see #MapAttrs_latLngBoundsSouthWestLatitude
+     * @see #MapAttrs_latLngBoundsSouthWestLongitude
+     * @see #MapAttrs_liteMode
+     * @see #MapAttrs_mapType
+     * @see #MapAttrs_uiCompass
+     * @see #MapAttrs_uiMapToolbar
+     * @see #MapAttrs_uiRotateGestures
+     * @see #MapAttrs_uiScrollGestures
+     * @see #MapAttrs_uiScrollGesturesDuringRotateOrZoom
+     * @see #MapAttrs_uiTiltGestures
+     * @see #MapAttrs_uiZoomControls
+     * @see #MapAttrs_uiZoomGestures
+     * @see #MapAttrs_useViewLifecycle
+     * @see #MapAttrs_zOrderOnTop
+     */
+    public static final int[] MapAttrs={
+      0x7f010001, 0x7f010003, 0x7f010004, 0x7f010005, 
+      0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 
+      0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 
+      0x7f01001c, 0x7f01001d, 0x7f010020, 0x7f010021, 
+      0x7f010022, 0x7f010023, 0x7f010024, 0x7f010025, 
+      0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029
+    };
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#ambientEnabled}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:ambientEnabled
+     */
+    public static final int MapAttrs_ambientEnabled=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#cameraBearing}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.GreatPlaces:cameraBearing
+     */
+    public static final int MapAttrs_cameraBearing=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#cameraMaxZoomPreference}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.GreatPlaces:cameraMaxZoomPreference
+     */
+    public static final int MapAttrs_cameraMaxZoomPreference=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#cameraMinZoomPreference}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.GreatPlaces:cameraMinZoomPreference
+     */
+    public static final int MapAttrs_cameraMinZoomPreference=3;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#cameraTargetLat}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.GreatPlaces:cameraTargetLat
+     */
+    public static final int MapAttrs_cameraTargetLat=4;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#cameraTargetLng}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.GreatPlaces:cameraTargetLng
+     */
+    public static final int MapAttrs_cameraTargetLng=5;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#cameraTilt}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.GreatPlaces:cameraTilt
+     */
+    public static final int MapAttrs_cameraTilt=6;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#cameraZoom}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.GreatPlaces:cameraZoom
+     */
+    public static final int MapAttrs_cameraZoom=7;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#latLngBoundsNorthEastLatitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.GreatPlaces:latLngBoundsNorthEastLatitude
+     */
+    public static final int MapAttrs_latLngBoundsNorthEastLatitude=8;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#latLngBoundsNorthEastLongitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.GreatPlaces:latLngBoundsNorthEastLongitude
+     */
+    public static final int MapAttrs_latLngBoundsNorthEastLongitude=9;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#latLngBoundsSouthWestLatitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.GreatPlaces:latLngBoundsSouthWestLatitude
+     */
+    public static final int MapAttrs_latLngBoundsSouthWestLatitude=10;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#latLngBoundsSouthWestLongitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.GreatPlaces:latLngBoundsSouthWestLongitude
+     */
+    public static final int MapAttrs_latLngBoundsSouthWestLongitude=11;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#liteMode}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:liteMode
+     */
+    public static final int MapAttrs_liteMode=12;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#mapType}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>hybrid</td><td>4</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>normal</td><td>1</td><td></td></tr>
+     * <tr><td>satellite</td><td>2</td><td></td></tr>
+     * <tr><td>terrain</td><td>3</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.example.GreatPlaces:mapType
+     */
+    public static final int MapAttrs_mapType=13;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#uiCompass}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:uiCompass
+     */
+    public static final int MapAttrs_uiCompass=14;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#uiMapToolbar}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:uiMapToolbar
+     */
+    public static final int MapAttrs_uiMapToolbar=15;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#uiRotateGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:uiRotateGestures
+     */
+    public static final int MapAttrs_uiRotateGestures=16;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#uiScrollGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:uiScrollGestures
+     */
+    public static final int MapAttrs_uiScrollGestures=17;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#uiScrollGesturesDuringRotateOrZoom}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:uiScrollGesturesDuringRotateOrZoom
+     */
+    public static final int MapAttrs_uiScrollGesturesDuringRotateOrZoom=18;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#uiTiltGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:uiTiltGestures
+     */
+    public static final int MapAttrs_uiTiltGestures=19;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#uiZoomControls}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:uiZoomControls
+     */
+    public static final int MapAttrs_uiZoomControls=20;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#uiZoomGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:uiZoomGestures
+     */
+    public static final int MapAttrs_uiZoomGestures=21;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#useViewLifecycle}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:useViewLifecycle
+     */
+    public static final int MapAttrs_useViewLifecycle=22;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#zOrderOnTop}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.GreatPlaces:zOrderOnTop
+     */
+    public static final int MapAttrs_zOrderOnTop=23;
+    /**
      * Attributes that can be used with a SignInButton.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -1457,7 +1487,7 @@ public final class R {
      * @see #SignInButton_scopeUris
      */
     public static final int[] SignInButton={
-      0x7f010001, 0x7f010003, 0x7f010018
+      0x7f010002, 0x7f01000b, 0x7f01001e
     };
     /**
      * <p>This symbol is the offset where the {@link com.example.GreatPlaces.R.attr#buttonSize}
